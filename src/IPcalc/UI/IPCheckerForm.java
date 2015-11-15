@@ -53,7 +53,7 @@ public class IPCheckerForm  extends JFrame{
                     String ip1 = ipFirstText1.getText() + "." + ipFirstText2.getText() + "." + ipFirstText3.getText() + "." + ipFirstText4.getText();
                     String ip2 = ipSecondText1.getText() + "." + ipSecondText2.getText() + "." + ipSecondText3.getText() + "." + ipSecondText4.getText();
                     if (model.validateIP(ip1, ip2) == 0){
-                        
+
                         for (String str : model.fillIPList(ip1, ip2)) {
                             model.addElement(str);
                         }

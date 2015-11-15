@@ -25,7 +25,7 @@ public class IPListModel extends DefaultListModel {
         ipList.clear();
         checker = new IPRangeChecker();
         collector = new IPRangeCollector(ip1, ip2);
-        ipList.addAll(checker.printIPList(collector.createIPRangeList()));
+        ipList.addAll(checker.checkIPRange(collector.createIPRangeList()));
         return ipList;
     }
 
